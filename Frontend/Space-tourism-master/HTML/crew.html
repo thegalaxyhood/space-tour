@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A display of our brave crew frontlining soace exploration"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/utilities.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/media.css" />
+    <script defer src="../script.js"></script>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <section class="crew_section">
+      <header>
+        <nav class="d_f jc_sb ai_c">
+          <a href="../index.html" class="nav_logo">
+            <img src="../assets/shared/logo.svg" alt="Company logo" />
+          </a>
+          <ul class="nav_list-items d_f">
+            <li class="nav_list--item">
+              <a class="d_f ai_c ls_2" href="./index.html">
+                <span>00</span>
+                <p>Home</p>
+              </a>
+            </li>
+            <li class="nav_list--item">
+              <a class="d_f ai_c ls_2" href="./destination.html"
+                ><span>01</span>
+                <p>Destination</p></a
+              >
+            </li>
+            <li class="nav_list--item nav--active">
+              <a class="d_f ai_c ls_2" href="./crew.html"
+                ><span>02</span>
+                <p>Crew</p></a
+              >
+            </li>
+            <li class="nav_list--item">
+              <a class="d_f ai_c ls_2" href="./technology.html"
+                ><span>03</span>
+                <p>Technology</p></a
+              >
+            </li>
+          </ul>
+
+          <!-- MOBILE HAMBURGER MENU  -->
+          <div class="mobile-nav">
+            <div class="nav-open">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="mobile-nav-slide">
+              <ul class="mobile-list-slide">
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1" href="../index.html">
+                    <span>00</span>
+                    <h2>HOME</h2>
+                  </a>
+                </li>
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1" href="./destination.html"
+                    ><span>01</span>
+                    <h2>DESTINATION</h2></a
+                  >
+                </li>
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1 mobile--active" href="./crew.html"
+                    ><span>02</span>
+                    <h2>CREW</h2></a
+                  >
+                </li>
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1" href="./technology.html"
+                    ><span>03</span>
+                    <h2>TECHNOLOGY</h2></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="crew_header header_primary">
+          <span>02</span>
+          <p>MEET YOUR CREW</p>
+        </div>
+        <div class="crew_contents d_f">
+          <div class="crew_text-area d_f fd_c jc_c">
+            <span class="crew_position crew_position--1 active--class"
+              >COMMANDER</span
+            >
+            <span class="crew_position crew_position--2"
+              >MISSION SPECIALIST</span
+            >
+            <span class="crew_position crew_position--3">PILOT</span>
+            <span class="crew_position crew_position--4">FLIGHT ENGINEER</span>
+            <p class="crew_name crew_name--1 active--class">DOUGLAS HURLEY</p>
+            <p class="crew_name crew_name--2">MARK SHUTTLEWORTH</p>
+            <p class="crew_name crew_name--3">VICTOR GLOVER</p>
+            <p class="crew_name crew_name--4">ANOUSHEH ANSARI</p>
+            <p class="crew_bio crew_bio--1 text_primary active--class">
+              Douglas Gerald Hurley is an American engineer, former Marine Corps
+              pilot and former NASA astronaut. He launched into space for the
+              third time as commander of Crew Dragon Demo-2.
+            </p>
+            <p class="crew_bio crew_bio--2 text_primary">
+              Mark Richard Shuttleworth is the founder and CEO of Canonical, the
+              company behind the Linux-based Ubuntu operating system.
+              Shuttleworth became the first South African to travel to space as
+              a space tourist.
+            </p>
+            <p class="crew_bio crew_bio--3 text_primary">
+              Pilot on the first operational flight of the SpaceX Crew Dragon to
+              the International Space Station. Glover is a commander in the U.S.
+              Navy where he pilots an F/A-18.He was a crew member of Expedition
+              64, and served as a station systems flight engineer.
+            </p>
+            <p class="crew_bio crew_bio--4 text_primary">
+              Anousheh Ansari is an Iranian American engineer and co-founder of
+              Prodea Systems. Ansari was the fourth self-funded space tourist,
+              the first self-funded woman to fly to the ISS, and the first
+              Iranian in space.
+            </p>
+            <ul class="crew_buttons d_f">
+              <li
+                class="crew_button crew_button--1 crew_button--active"
+                data-crew="1"
+              ></li>
+              <li class="crew_button crew_button--2" data-crew="2"></li>
+              <li class="crew_button crew_button--3" data-crew="3"></li>
+              <li class="crew_button crew_button--4" data-crew="4"></li>
+            </ul>
+          </div>
+          <div class="crew_image-area d_f jc_c ai_c">
+            <img
+              class="crew_image crew_image--1 active--class"
+              src="../assets/crew/image-douglas-hurley.webp"
+              alt="A photo of Douglas Hurley"
+            />
+            <img
+              class="crew_image crew_image--2"
+              src="../assets/crew/image-mark-shuttleworth.webp"
+              alt=" A photo of Mark Shuttleworth"
+            />
+            <img
+              class="crew_image crew_image--3"
+              src="../assets/crew/image-victor-glover.webp"
+              alt="A photo of Victor Glover"
+            />
+            <img
+              class="crew_image crew_image--4"
+              src="../assets/crew/image-anousheh-ansari.webp"
+              alt="A photo of Anousheh Ansari"
+            />
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>

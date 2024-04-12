@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&family=Bellefair&family=Open+Sans:wght@300;400;500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --neutral: #fff;
+  --neutral-dark: #ccc;
+  --neutral-darker: #999;
+  --text-font: "Open Sans", sans-serif;
+  --small-header-font: "Barlow Condensed", sans-serif;
+  --large-header-font: "Bellefair", serif;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--neutral);
+  font-family: var(--text-font);
+}
+
+.nav_logo img {
+  width: 100%;
+}
+
+.home_section,
+.destination_section,
+.crew_section,
+.technology_section {
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  overflow-y: hidden;
+}
+
+/* NAVIGATION STYLING */
+header {
+  position: relative;
+}
+
+nav {
+  padding: 2rem 0;
+  padding-left: 3rem;
+}
+
+.nav_list-items {
+  backdrop-filter: blur(20px);
+  padding-right: 10rem;
+  padding-left: 4rem;
+  gap: 6rem;
+  list-style: none;
+}
+
+.nav_list--item a {
+  text-decoration: none;
+  padding: 2rem 0rem;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-family: var(--small-header-font);
+}
+
+.nav_list--item span {
+  font-weight: 600;
+  color: var(--neutral);
+}
+.nav_list--item p {
+  text-transform: uppercase;
+  color: var(--neutral-dark);
+}
+
+.nav_list--item:hover {
+  border-bottom: 2px solid var(--neutral-dark);
+}
+
+/* MAIN SECTION STYLING */
+main {
+  margin-top: 10rem;
+}
+
+.home_text-area,
+.home_image-area {
+  flex: 1;
+}
+
+.home_text-area {
+  padding: 0 5rem;
+}
+
+.home_text-area h2 {
+  font-family: var(--small-header-font);
+  font-weight: 300;
+  font-size: 2.8rem;
+  color: var(--neutral-dark);
+}
+
+.space_text {
+  font-size: 10rem;
+  font-family: var(--large-header-font);
+  color: var(--neutral);
+}
+.home_text-area p {
+  width: 30rem;
+}
+
+.home_image {
+  width: 25rem;
+  height: 25rem;
+  background: var(--neutral);
+  border-radius: 50%;
+  color: #000;
+  font-size: 3rem;
+  font-family: var(--large-header-font);
+}
+
+.home_image a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* MOBILE NAVIGATION */
+.mobile-nav,
+.nav-open,
+.mobile-nav-slide {
+  position: absolute;
+}
+.mobile-nav {
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  display: none;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.nav-open {
+  top: 15px;
+  right: 20px;
+  z-index: 100;
+}
+
+.mobile-nav .nav-close {
+  display: none;
+}
+
+.mobile-nav-slide {
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  backdrop-filter: blur(40px);
+  transform: translateX(100%);
+  display: none;
+  color: #fff;
+}
+
+.mobile-nav.active .mobile-nav-slide {
+  display: block;
+  transform: translate(0);
+}
+.mobile-list-slide {
+  margin-top: 8rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mobile-list-item {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+}
+
+.mobile-list-item a {
+  text-decoration: none;
+  gap: 1rem;
+  color: #fff;
+  font-family: var(--small-header-font);
+  border-bottom: 2px solid transparent;
+}
+
+.mobile-list-item a:hover {
+  border-color: var(--neutral-darker);
+}
+
+.mobile-list-item a span {
+  font-size: 2.5rem;
+  color: var(--neutral-darker);
+}
+
+/* /////////////////////////////////////
+DESTINATION SECTION STYLING
+///////////////////////////////////// */
+
+.destination_section main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.destination_image-area,
+.destination_text-area {
+  flex: 1;
+  padding: 2rem;
+}
+
+.destination_image,
+.selected_destination,
+.destination_stats,
+.destination_content {
+  display: none;
+}
+
+/*DESTINATION IMAGE AREA STLYING*/
+.destination_image-area {
+  perspective: 240px;
+}
+
+.destination_image {
+  width: 32rem;
+}
+
+/* DESTINATION TEXT AREA STLYING */
+.destination_text-area {
+  padding: 1rem 4rem;
+}
+
+.destination_list {
+  list-style: none;
+  gap: 2rem;
+  font-family: var(--small-header-font);
+  font-size: 1.4rem;
+}
+
+.destination_list-item {
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.destination_list-item:hover {
+  border-bottom: 2px solid var(--neutral-dark);
+}
+
+.selected_destination {
+  font-size: 7.5rem;
+  font-family: var(--large-header-font);
+  font-weight: 500;
+}
+
+.destination_stats {
+  gap: 4rem;
+  border-top: 1px solid var(--neutral-darker);
+  padding-top: 2rem;
+}
+
+.destination_distace,
+.travel_time {
+  gap: 1rem;
+}
+
+.destination_stats span {
+  font-size: 1.4rem;
+  font-family: var(--small-header-font);
+  color: var(--neutral-dark);
+}
+
+.destination_stats p {
+  font-size: 2.5rem;
+  font-family: var(--large-header-font);
+}
+
+/* /////////////////////////////////////
+CREW SECTION STYLING
+///////////////////////////////////// */
+
+.crew_section main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.crew_text-area,
+.crew_image-area {
+  flex: 1;
+}
+
+.crew_position,
+.crew_name,
+.crew_bio,
+.crew_image {
+  display: none;
+}
+
+.crew_text-area {
+  padding: 1rem 4rem;
+  gap: 2.5rem;
+}
+
+.crew_position {
+  font-size: 2rem;
+  color: var(--neutral-dark);
+  font-family: var(--large-header-font);
+}
+
+.crew_name {
+  font-size: 4rem;
+  font-family: var(--large-header-font);
+}
+
+.crew_buttons {
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.crew_button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: var(--neutral-darker);
+}
+
+.crew_button:hover {
+  background: var(--neutral);
+}
+
+.crew_image {
+  width: 30rem;
+  height: 100%;
+}
+
+.crew_image--2 {
+  width: 25rem;
+}
+
+/* /////////////////////////////////////
+TECHNOLOGY SECTION STYLING
+///////////////////////////////////// */
+
+.technology_section main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.technology_contents {
+  height: 80%;
+}
+
+.technology_text-area,
+.technology_image-area {
+  flex: 1;
+}
+
+.technology_lead-header,
+.technology_info,
+.technology_image {
+  display: none;
+}
+
+.technology_lists {
+  padding: 2rem;
+  list-style: none;
+  gap: 1rem;
+}
+
+.technology_list {
+  padding: 1.35rem 2rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: var(--large-header-font);
+}
+
+.technology_text-container {
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.technology_sub-header {
+  font-size: 1.7rem;
+  font-family: var(--small-header-font);
+  color: var(--neutral-darker);
+}
+
+.technology_lead-header {
+  font-size: 4rem;
+  font-family: var(--large-header-font);
+  font-weight: 300;
+}
+
+.technology_image {
+  width: 35rem;
+}
+
+/* MOBILE NAV ACTIVE CLASS */
+.mobile--active {
+  border-bottom: 2px solid var(--neutral) !important;
+}
+
+/* JAVASCRIPT ACTIVE CLASSES */
+.nav--active {
+  border-bottom: 2px solid var(--neutral);
+}
+
+.destination_list--active {
+  border-bottom: 2px solid var(--neutral);
+}
+
+.crew_button--active {
+  background: var(--neutral);
+}
+
+.technology_list--active {
+  background: var(--neutral);
+  color: #000;
+  font-weight: 600;
+}
+
+.active--class {
+  display: flex;
+}

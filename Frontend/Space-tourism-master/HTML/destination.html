@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A page showcasing different planets and their details"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/utilities.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/media.css" />
+    <script defer src="../script.js"></script>
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <section class="destination_section">
+      <header>
+        <nav class="d_f jc_sb ai_c">
+          <a href="../index.html" class="nav_logo">
+            <img src="../assets/shared/logo.svg" alt="Company logo" />
+          </a>
+          <ul class="nav_list-items d_f">
+            <li class="nav_list--item">
+              <a class="d_f ai_c ls_2" href="../index.html">
+                <span>00</span>
+                <p>Home</p>
+              </a>
+            </li>
+            <li class="nav_list--item nav--active">
+              <a class="d_f ai_c ls_2" href="./destination.html"
+                ><span>01</span>
+                <p>Destination</p></a
+              >
+            </li>
+            <li class="nav_list--item">
+              <a class="d_f ai_c ls_2" href="./crew.html"
+                ><span>02</span>
+                <p>Crew</p></a
+              >
+            </li>
+            <li class="nav_list--item">
+              <a class="d_f ai_c ls_2" href="./technology.html"
+                ><span>03</span>
+                <p>Technology</p></a
+              >
+            </li>
+          </ul>
+
+          <!-- MOBILE HAMBURGER MENU  -->
+          <div class="mobile-nav">
+            <div class="nav-open">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="mobile-nav-slide">
+              <ul class="mobile-list-slide">
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1" href="../index.html">
+                    <span>00</span>
+                    <h2>HOME</h2>
+                  </a>
+                </li>
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1 mobile--active" href="./destination.html"
+                    ><span>01</span>
+                    <h2>DESTINATION</h2></a
+                  >
+                </li>
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1" href="./crew.html"
+                    ><span>02</span>
+                    <h2>CREW</h2></a
+                  >
+                </li>
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1" href="./technology.html"
+                    ><span>03</span>
+                    <h2>TECHNOLOGY</h2></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="destination_header header_primary">
+          <span>01</span>
+          <p>PICK YOUR DESTINATION</p>
+        </div>
+        <div class="destination_contents d_f">
+          <div class="destination_image-area d_f jc_c ai_c">
+            <img
+              class="destination_image destination_image--1 active--class"
+              src="../assets/destination/image-moon.webp"
+              alt="Moon planet image"
+            />
+            <img
+              class="destination_image destination_image--2"
+              src="../assets/destination/image-mars.webp"
+              alt="Mars planet image"
+            />
+            <img
+              class="destination_image destination_image--3"
+              src="../assets/destination/image-europa.webp"
+              alt="Europa planet image"
+            />
+            <img
+              class="destination_image destination_image--4"
+              src="../assets/destination/image-titan.webp"
+              alt="Titan planet image"
+            />
+          </div>
+          <div class="destination_text-area d_f fd_c jc_se">
+            <ul class="destination_list d_f ls_2">
+              <li
+                class="destination_list-item destination_list-item--1 destination_list--active"
+                data-destination="1"
+              >
+                MOON
+              </li>
+              <li
+                class="destination_list-item destination_list-item--2"
+                data-destination="2"
+              >
+                MARS
+              </li>
+              <li
+                class="destination_list-item destination_list-item--3"
+                data-destination="3"
+              >
+                EUROPA
+              </li>
+              <li
+                class="destination_list-item destination_list-item--4"
+                data-destination="4"
+              >
+                TITAN
+              </li>
+            </ul>
+            <h2 class="selected_destination destination--1 destination--active">
+              MOON
+            </h2>
+            <h2 class="selected_destination destination--2">MARS</h2>
+            <h2 class="selected_destination destination--3">EUROPA</h2>
+            <h2 class="selected_destination destination--4">TITAN</h2>
+            <p
+              class="text_primary destination_content destination_content--1 active--class"
+            >
+              See our planet as you've never seen it before. A perfect relaxing
+              trip away to help regain perspective and come back refreshed.
+              While you're there, take in some history by visiting the Luna 2
+              and Apollo 11 landing sites.
+            </p>
+            <p class="text_primary destination_content destination_content--2">
+              Don't forget to pack your hiking boots. You'll need them to tackle
+              Olympus Mons, the tallest planetary mountain in our solar system.
+              It's two and a half times the size of Everest!
+            </p>
+            <p class="text_primary destination_content destination_content--3">
+              The smallest of the four Galilean moons orbiting Jupiter, Europa
+              is a winter lover's dream. With an icy surface, it's perfect for a
+              bit of ice skating, curling, hockey, or simple relaxation in your
+              snug wintery cabin.
+            </p>
+            <p class="text_primary destination_content destination_content--4">
+              The only moon known to have a dense atmosphere other than Earth,
+              Titan is a home away from home (just a few hundred degrees
+              colder!). As a bonus, you get striking views of the Rings of
+              Saturn.
+            </p>
+            <div
+              class="destination_stats d_f destination_stats--1 active--class"
+            >
+              <div class="destination_distace d_f fd_c">
+                <span class="ls_1">AVG. DISTANCE</span>
+                <p>384,400 KM</p>
+              </div>
+              <div class="travel_time d_f fd_c">
+                <span class="ls_1">EST TRAVEL TIME</span>
+                <p>3 DAYS</p>
+              </div>
+            </div>
+            <div class="destination_stats destination_stats--2">
+              <div class="destination_distace d_f fd_c">
+                <span class="ls_1">AVG. DISTANCE</span>
+                <p>225 MIL. KM</p>
+              </div>
+              <div class="travel_time d_f fd_c">
+                <span class="ls_1">EST TRAVEL TIME</span>
+                <p>9 MONTHS</p>
+              </div>
+            </div>
+            <div class="destination_stats destination_stats--3">
+              <div class="destination_distace d_f fd_c">
+                <span class="ls_1">AVG. DISTANCE</span>
+                <p>628 MIL. KM</p>
+              </div>
+              <div class="travel_time d_f fd_c">
+                <span class="ls_1">EST TRAVEL TIME</span>
+                <p>3 YEARS</p>
+              </div>
+            </div>
+            <div class="destination_stats destination_stats--4">
+              <div class="destination_distace d_f fd_c">
+                <span class="ls_1">AVG. DISTANCE</span>
+                <p>1.6 BIL. KM</p>
+              </div>
+              <div class="travel_time d_f fd_c">
+                <span class="ls_1">EST TRAVEL TIME</span>
+                <p>7 YEARS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&family=Bellefair&family=Open+Sans:wght@300;400;500&display=swap");
+
+/* UTILITIES */
+.ta_c {
+  text-align: center;
+}
+
+.d_f {
+  display: flex;
+}
+
+.d_g {
+  display: grid;
+}
+
+.ai_c {
+  align-items: center;
+}
+
+.ai_fs {
+  align-items: flex-start;
+}
+
+.jc_c {
+  justify-content: center;
+}
+
+.jc_sb {
+  justify-content: space-between;
+}
+
+.jc_se {
+  justify-content: space-evenly;
+}
+.fd_c {
+  flex-direction: column;
+}
+
+.ls_1 {
+  letter-spacing: 0.1rem;
+}
+.ls_2 {
+  letter-spacing: 0.2rem;
+}
+
+.header_primary {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 0.2rem;
+  gap: 1rem;
+  display: flex;
+}
+
+.text_primary {
+  letter-spacing: 0.1rem;
+  font-family: "Open Sans", sans-serif;
+  color: var(--neutral-dark);
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/* UTILITY HEADER STYLING */
+.destination_header span,
+.crew_header span,
+.technology_header span {
+  font-weight: 600;
+  color: #999999;
+}
+
+.home_section {
+  background: url("../assets/home/background-home-desktop.jpg");
+}
+
+.destination_section {
+  background: url("../assets/destination/background-destination-desktop.jpg");
+}
+
+.crew_section {
+  background: url("../assets/crew/background-crew-desktop.jpg");
+}
+
+.technology_section {
+  background: url("../assets/technology/background-technology-desktop.jpg");
+}

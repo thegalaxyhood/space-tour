@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A page on our shuttles and machinery used in space exploration"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/utilities.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/media.css" />
+    <script defer src="../script.js"></script>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <section class="technology_section">
+      <header>
+        <nav class="d_f jc_sb ai_c">
+          <a href="../index.html" class="nav_logo">
+            <img src="../assets/shared/logo.svg" alt="Company logo" />
+          </a>
+          <ul class="nav_list-items d_f">
+            <li class="nav_list--item">
+              <a class="d_f ai_c ls_2" href="../index.html">
+                <span>00</span>
+                <p>Home</p>
+              </a>
+            </li>
+            <li class="nav_list--item">
+              <a class="d_f ai_c ls_2" href="./destination.html"
+                ><span>01</span>
+                <p>Destination</p></a
+              >
+            </li>
+            <li class="nav_list--item">
+              <a class="d_f ai_c ls_2" href="./crew.html"
+                ><span>02</span>
+                <p>Crew</p></a
+              >
+            </li>
+            <li class="nav_list--item nav--active">
+              <a class="d_f ai_c ls_2" href="./technology.html"
+                ><span>03</span>
+                <p>Technology</p></a
+              >
+            </li>
+          </ul>
+
+          <!-- MOBILE HAMBURGER MENU  -->
+          <div class="mobile-nav">
+            <div class="nav-open">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="mobile-nav-slide">
+              <ul class="mobile-list-slide">
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1" href="../index.html">
+                    <span>00</span>
+                    <h2>HOME</h2>
+                  </a>
+                </li>
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1" href="./destination.html"
+                    ><span>01</span>
+                    <h2>DESTINATION</h2></a
+                  >
+                </li>
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1" href="./crew.html"
+                    ><span>02</span>
+                    <h2>CREW</h2></a
+                  >
+                </li>
+                <li class="mobile-list-item">
+                  <a
+                    class="d_f ai_c ls_1 mobile--active"
+                    href="./technology.html"
+                    ><span>03</span>
+                    <h2>TECHNOLOGY</h2></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="technology_header header_primary">
+          <span>03</span>
+          <p>SPACE LAUNCH 101</p>
+        </div>
+        <div class="technology_contents d_f">
+          <div class="technology_text-area d_f">
+            <ul class="technology_lists d_f fd_c jc_c">
+              <li
+                class="technology_list d_f ai_c jc_c technology_list--1 technology_list--active"
+                data-tech="1"
+              >
+                1
+              </li>
+              <li
+                class="technology_list d_f ai_c jc_c technology_list--2"
+                data-tech="2"
+              >
+                2
+              </li>
+              <li
+                class="technology_list d_f ai_c jc_c technology_list--3"
+                data-tech="3"
+              >
+                3
+              </li>
+            </ul>
+            <div class="technology_text-container d_f fd_c jc_c">
+              <span class="technology_sub-header ls_1">THE TERMINOLOGY</span>
+              <h1
+                class="technology_lead-header technology_lead-header--1 active--class"
+              >
+                LAUNCH VEHICLE
+              </h1>
+              <h1 class="technology_lead-header technology_lead-header--2">
+                SPACEPORT
+              </h1>
+              <h1 class="technology_lead-header technology_lead-header--3">
+                SPACE CAPSULE
+              </h1>
+              <p
+                class="technology_info technology_info--1 active--class text_primary"
+              >
+                A launch vehicle or carrier rocket is a rocket-propelled vehicle
+                used to carry a payload from Earth's surface to space, usually
+                to Earth orbit or beyond. Our WEB-X carrier rocket is the most
+                powerful in operation. Standing 150 metres tall, it's quite an
+                awe-inspiring sight on the launch pad!
+              </p>
+              <p class="technology_info technology_info--2 text_primary">
+                A spaceport or cosmodrome is a site for launching (or receiving)
+                spacecraft, by analogy to the seaport for ships or airport for
+                aircraft. Based in the famous Cape Canaveral, our spaceport is
+                ideally situated to take advantage of the Earth's rotation for
+                launch.
+              </p>
+              <p class="technology_info technology_info--3 text_primary">
+                A space capsule is an often-crewed spacecraft that uses a
+                blunt-body reentry capsule to reenter the Earth's atmosphere
+                without wings. Our capsule is where you'll spend your time
+                during the flight. It includes a space gym, cinema, and plenty
+                of other activities to keep you entertained.
+              </p>
+            </div>
+          </div>
+          <div class="technology_image-area d_f jc_c ai_c">
+            <img
+              class="technology_image technology_image--1 active--class"
+              src="../assets/technology/image-launch-vehicle-portrait.jpg"
+              alt=" A photo of a launch vehicle"
+            />
+            <img
+              class="technology_image technology_image--2"
+              src="../assets/technology/image-spaceport-portrait.jpg"
+              alt=" A photo of a spaceport"
+            />
+            <img
+              class="technology_image technology_image--3"
+              src="../assets/technology/image-space-capsule-portrait.jpg"
+              alt="A photo of a space capsule"
+            />
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>

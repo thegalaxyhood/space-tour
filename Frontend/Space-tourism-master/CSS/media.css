@@ -1,0 +1,553 @@
+/* DESKTOP */
+/* Over 1600px Screen */
+@media (min-width: 100.1em) {
+  html {
+    /* 15px per rem */
+    font-size: 93.75%;
+  }
+}
+/* 1600px Screen and below */
+@media (max-width: 100em) {
+  html {
+    /* 13px per rem */
+    font-size: 81.25%;
+  }
+}
+/* 1500px Screen and below */
+@media (max-width: 93.75em) {
+  html {
+    /* 12px per rem */
+    font-size: 75%;
+  }
+}
+/* 1400px and below */
+@media (max-width: 87.5em) {
+  html {
+    /* 11px per rem */
+    font-size: 68.75%;
+  }
+}
+/* 1300px and below */
+@media (max-width: 81.25em) {
+  html {
+    /* 10px per rem */
+    font-size: 62.5%;
+  }
+}
+/* 1100px and below */
+@media (max-width: 68.75em) {
+  html {
+    /* 9px per rem */
+    font-size: 56.25%;
+  }
+}
+
+/* 900px and below */
+@media (max-width: 56.25em) {
+  .home_section main {
+    row-gap: 4rem;
+  }
+
+  nav {
+    padding: 1.5rem;
+    padding-left: 2rem;
+  }
+
+  .nav_logo img {
+    width: 35px;
+  }
+
+  .nav_list-items {
+    padding-right: 4rem;
+    gap: 4rem;
+  }
+
+  .home_text-area {
+    flex: 1.2;
+    gap: 2rem;
+  }
+}
+
+/* Tablet */
+/* 800px and below */
+@media (max-width: 50em) {
+  /* HOME STYLING */
+  .home_section {
+    background: url("../assets/home/background-home-tablet.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .header_primary {
+    padding: 2rem;
+    font-size: 2.5rem;
+  }
+  .text_primary {
+    line-height: 3.7rem;
+    font-size: 2rem;
+  }
+
+  .nav_list--item a {
+    font-size: 1.6rem;
+  }
+
+  .home_section main {
+    flex-direction: column;
+  }
+
+  .home_text-area h2 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .space_text {
+    font-size: 6rem;
+  }
+
+  .home_text-area p {
+    width: 45rem;
+    text-align: center;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+  }
+
+  .home_image {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  /* DESTINATION SYLING */
+  .destination_list {
+    gap: 2.25rem;
+  }
+
+  .destination_section {
+    background: url("../assets/destination/background-destination-tablet.jpg");
+    background-size: cover;
+  }
+
+  .destination_image {
+    width: 40rem;
+  }
+
+  .destination_list {
+    margin-bottom: 2rem;
+    font-size: 2.25rem;
+  }
+
+  .destination_content {
+    padding-bottom: 2.5rem;
+  }
+
+  .destination_stats {
+    padding-top: 2rem;
+  }
+
+  .destination_stats span {
+    font-size: 2rem;
+  }
+
+  .destination_stats p {
+    font-size: 3rem;
+  }
+
+  /* CREW STYLING */
+  .crew_section {
+    background: url("../assets/crew/background-crew-tablet.jpg");
+    background-size: cover;
+  }
+
+  .crew_position {
+    font-size: 2rem;
+  }
+  .crew_name {
+    font-size: 4rem;
+  }
+
+  .crew_button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .crew_image--2 {
+    width: 27rem;
+  }
+  .crew_image--3 {
+    width: 33rem;
+  }
+  .crew_image--4 {
+    width: 40rem;
+  }
+
+  /* TECHNOLOGY STYLING */
+  .technology_contents {
+    gap: 3rem;
+  }
+
+  .technology_section {
+    background: url("../assets/technology/background-technology-tablet.jpg");
+    background-size: cover;
+  }
+
+  .technology_text-area {
+    flex-direction: column-reverse;
+  }
+
+  .technology_lists {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .technology_image {
+    width: 23rem;
+  }
+
+  .crew_contents {
+    gap: 2rem;
+  }
+
+  .technology_sub-header {
+    font-size: 2.4rem;
+  }
+
+  /* UTILITIES UNDER 800px */
+  .destination_contents,
+  .crew_contents,
+  .technology_contents {
+    flex-direction: column;
+  }
+}
+
+/* 700px and below */
+@media (max-width: 43.75em) {
+  .nav_list-items {
+    display: none;
+  }
+  .mobile-nav {
+    display: flex;
+    color: #fff;
+  }
+
+  .technology_text-container {
+    gap: 1.6rem;
+  }
+}
+
+/* 600px and below */
+@media (max-width: 37.5em) {
+  .destination_text-area {
+    padding: 1rem 2rem;
+  }
+  .destination_stats p {
+    font-size: 2rem;
+  }
+
+  .crew_image--3 {
+    width: 25rem;
+  }
+  .crew_image--4 {
+    width: 35rem;
+  }
+
+  .technology_text-container {
+    gap: 1.5rem;
+  }
+
+  .technology_lead-header {
+    font-size: 3rem;
+  }
+
+  .technology_image {
+    width: 20rem;
+  }
+}
+/* 500px and below */
+@media (max-width: 31.25em) {
+  .home_section {
+    background: url("../assets/home/background-home-mobile.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .home_text-area {
+    padding: 0 2rem;
+  }
+
+  .home_text-area p {
+    width: 100%;
+  }
+
+  .destination_image {
+    width: 35rem;
+  }
+
+  .destination_section {
+    background: url("../assets/destination/background-destination-mobile.jpg");
+    background-size: cover;
+  }
+  .crew_section {
+    background: url("../assets/crew/background-crew-mobile.jpg");
+    background-size: cover;
+  }
+
+  .crew_contents {
+    gap: 3rem;
+  }
+
+  .crew_image--2 {
+    width: 20rem;
+  }
+
+  .crew_image--3 {
+    width: 25rem;
+  }
+  .crew_image--4 {
+    width: 30rem;
+  }
+
+  .technology_section {
+    background: url("../assets/technology/background-technology-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .technology_section main {
+    width: 95%;
+  }
+
+  .technology_lists {
+    padding-right: 0;
+  }
+
+  .technology_list {
+    font-size: 1.5rem;
+  }
+
+  .technology_image {
+    width: 18rem;
+  }
+
+  .mobile-nav-slide {
+    width: 100vw;
+  }
+
+  .mobile-list-slide {
+    align-items: center;
+  }
+}
+
+/* 450px and below */
+@media (max-width: 28.125em) {
+  .mobile-list-item a span {
+    font-size: 2.5rem;
+  }
+  .mobile-list-item a {
+    font-size: 2rem;
+    gap: 2rem;
+  }
+  .destination_list {
+    justify-content: center;
+  }
+  .destination_text-area {
+    text-align: center;
+  }
+
+  .destination_text-area {
+    padding: 1rem;
+  }
+
+  .destination_stats {
+    justify-content: center;
+  }
+
+  .crew_button {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .crew_name {
+    font-size: 3rem;
+  }
+
+  .crew_text-area {
+    padding: 1rem 2rem;
+  }
+
+  .crew_image--2 {
+    width: 22rem;
+  }
+
+  .crew_image--3 {
+    width: 27rem;
+  }
+  .crew_image--4 {
+    width: 32rem;
+  }
+
+  .technology_text-container {
+    padding-bottom: 1.5rem;
+  }
+
+  .technology_lead-header {
+    font-size: 2.5rem;
+  }
+}
+
+/* 400px and below */
+@media (max-width: 25.2em) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .mobile-list-item a span {
+    font-size: 5rem;
+  }
+  .mobile-list-item a {
+    font-size: 3.5rem;
+  }
+  .home_text-area h2 {
+    font-size: 3.5rem;
+  }
+  .space_text {
+    font-size: 10rem;
+  }
+  .home_text-area p {
+    font-size: 3rem;
+    line-height: 6rem;
+  }
+
+  .home_image {
+    width: 38rem;
+    height: 38rem;
+    font-size: 5rem;
+  }
+
+  .header_primary {
+    padding: 2rem 3rem;
+    font-size: 4.5rem;
+  }
+  .destination_contents {
+    gap: 2rem;
+  }
+
+  .destination_content {
+    padding-bottom: 3.5rem;
+  }
+
+  .destination_image {
+    width: 40rem;
+  }
+
+  .crew_position {
+    font-size: 3rem;
+  }
+
+  .crew_name {
+    font-size: 5rem;
+  }
+  .destination_list {
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+  }
+  .destination_stats {
+    padding-top: 3.5rem;
+  }
+  .text_primary {
+    line-height: 6.25rem;
+    font-size: 2.75rem;
+  }
+  .destination_distace,
+  .travel_time {
+    gap: 2rem;
+  }
+
+  .destination_stats span {
+    font-size: 3rem;
+  }
+
+  .destination_stats p {
+    font-size: 4rem;
+  }
+
+  .crew_image {
+    width: 50rem;
+  }
+
+  .technology_lead-header {
+    font-size: 4rem;
+  }
+
+  .technology_image {
+    width: 28rem;
+  }
+
+  .technology_list {
+    font-size: 3rem;
+    padding: 2rem 3rem;
+  }
+}
+
+/* 365px and below */
+@media (max-width: 22.8215em) {
+  .header_primary {
+    padding: 2rem 1rem;
+  }
+
+  .crew_position {
+    font-size: 2rem;
+  }
+
+  .crew_name {
+    font-size: 2.5rem;
+  }
+  .technology_image {
+    width: 25rem;
+  }
+}
+
+/* 330px and below */
+@media (max-width: 20.625em) {
+  html {
+    font-size: 31.25%;
+  }
+
+  .home_text-area h2 {
+    font-size: 4rem;
+  }
+
+  .home_text-area p {
+    width: 100%;
+    font-size: 2.4rem;
+    line-height: 7rem;
+    padding: 1.5rem;
+  }
+  .destination_image {
+    width: 45rem;
+  }
+}
+
+/* 300px and below */
+@media (max-width: 18.75em) {
+  .crew_image--1 {
+    width: 12.5rem;
+  }
+
+  .crew_image--2 {
+    width: 10rem;
+  }
+  .crew_image--3 {
+    width: 12.5rem;
+  }
+
+  .crew_image--4 {
+    width: 15rem;
+  }
+
+  .technology_image {
+    width: 12rem;
+  }
+}

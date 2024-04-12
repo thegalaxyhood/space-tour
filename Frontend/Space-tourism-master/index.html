@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A website which enables you explore some of the wonders of our Solar System"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/utilities.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <link rel="stylesheet" href="../CSS/media.css" />
+    <script defer src="../script.js"></script>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <section class="home_section">
+      <header>
+        <nav class="d_f jc_sb ai_c">
+          <a href="./index.html" class="nav_logo">
+            <img src="../assets/shared/logo.svg" alt="Company logo" />
+          </a>
+          <ul class="nav_list-items d_f">
+            <li class="nav_list--item nav--active">
+              <a class="d_f ai_c ls_2" href="./index.html">
+                <span>00</span>
+                <p>Home</p>
+              </a>
+            </li>
+            <li class="nav_list--item">
+              <a class="d_f ai_c ls_2" href="./HTML/destination.html"
+                ><span>01</span>
+                <p>Destination</p></a
+              >
+            </li>
+            <li class="nav_list--item">
+              <a class="d_f ai_c ls_2" href="./HTML/crew.html"
+                ><span>02</span>
+                <p>Crew</p></a
+              >
+            </li>
+            <li class="nav_list--item">
+              <a class="d_f ai_c ls_2" href="./HTML/technology.html"
+                ><span>03</span>
+                <p>Technology</p></a
+              >
+            </li>
+          </ul>
+
+          <!-- MOBILE HAMBURGER MENU  -->
+          <div class="mobile-nav">
+            <div class="nav-open">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="nav-close">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+
+            <div class="mobile-nav-slide">
+              <ul class="mobile-list-slide">
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1 mobile--active" href="./index.html">
+                    <span>00</span>
+                    <h2>HOME</h2>
+                  </a>
+                </li>
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1" href="./HTML/destination.html"
+                    ><span>01</span>
+                    <h2>DESTINATION</h2></a
+                  >
+                </li>
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1" href="./HTML/crew.html"
+                    ><span>02</span>
+                    <h2>CREW</h2></a
+                  >
+                </li>
+                <li class="mobile-list-item">
+                  <a class="d_f ai_c ls_1" href="./HTML/technology.html"
+                    ><span>03</span>
+                    <h2>TECHNOLOGY</h2></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="d_f">
+        <div class="home_text-area d_f fd_c ai_c jc_c">
+          <h2>
+            SO, YOU WANT TO TRAVEL TO<br />
+            <span class="space_text">SPACE</span>
+          </h2>
+          <p class="text_primary">
+            Let's face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we'll give you a truly out of this
+            world experience!
+          </p>
+        </div>
+        <div class="home_image-area d_f jc_c">
+          <div class="home_image d_f ai_c jc_c">
+            <a href="./HTML/destination.html"> EXPLORE</a>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>
